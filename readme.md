@@ -1,5 +1,5 @@
 Rocketseat Discover
 
-Trilha Conectar
-Trilha Fundamentar
-Trilha Especializar 
+- Trilha Conectar
+- Trilha Fundamentar
+- Trilha Especializar 
