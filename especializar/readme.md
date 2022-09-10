@@ -1,4 +1,4 @@
-## Discover > Trilha Especializar 
+## Rocketseat Discover - Trilha Especializar 
 
 ### Transition e Animation
 
