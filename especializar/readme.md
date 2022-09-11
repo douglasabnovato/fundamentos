@@ -8,3 +8,15 @@ Duas propriedades do css para fazer personalizações de transições e animaç�
 - [x] O que é css transition?
 - [x] Transition property e duration
 - [x] Transition timing functions   
+- [ ] Transition delay
+- [ ] Transition property all
+- [ ] Exemplo Transition
+- [ ] O que é css animation?
+- [ ] Animation name e duration
+- [ ] Keyframes com porcentagens
+- [ ] exemplo animation
+- [ ] Animation delay
+- [ ] Animation iteration count
+- [ ] Animation direction
+- [ ] Animation timing function 
+- [ ] Animation fill mode
