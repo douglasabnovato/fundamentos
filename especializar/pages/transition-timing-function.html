@@ -128,18 +128,57 @@
           text-align: left;
         }
       }
+
+      .line {
+        width: 100%;
+        background-color: blue;
+        height: 25px;
+        margin-bottom: 10px;
+        transition: width;
+        transition-duration: 1s;
+      }
+
+      body:hover .line {
+        width: 20px;
+        background-color: rgb(255, 0, 234);
+      }
+
+      .ease {
+        transition-timing-function: ease;
+      }
+
+      .linear {
+        transition-timing-function: linear;
+      }
+
+      .ease-in {
+        transition-timing-function: ease-in;
+      }
+      
+      .ease-out {
+        transition-timing-function: ease-out;
+      }
+      
+      .ease-in-out {
+        transition-timing-function: ease-in-out;
+      }
+
+      .cube {
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
     </style>
   </head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <div class="dropdown">
+      <a href="../index.html">Home</a>
+      <div class="active dropdown">
         <button class="dropbtn">
           Trilha Especializar
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="./pages/transition-timing-function.html">Transition e Animation</a>
+          <a class="active" href="#especializar-1">Transition e Animation</a>
           <a href="#especializar-2">Especializar 2</a>
           <a href="#especializar-3">Especializar 3</a>
         </div>
@@ -186,11 +225,18 @@
       >
     </div>
 
-    <div id="home" style="padding-left: 16px">
-      <h2>Responsive Topnav with Dropdown</h2>
+    <div id="especializar-1" style="padding-left: 16px">
+      <h2>CSS Transition Timing Function</h2>
       <p>Resize the browser window to see how it works.</p>
       <p>Hover over the dropdown button to open the dropdown menu.</p>
     </div>
+
+    <div class="line ease">EASE</div>
+    <div class="line linear">LINEAR</div>
+    <div class="line ease-in">EASE-IN</div>
+    <div class="line ease-out">EASE-OUT</div>
+    <div class="line ease-in-out">EASE-IN-OUT</div>
+    <div class="line cube">CUBE</div>
 
     <script>
       function myFunction() {
