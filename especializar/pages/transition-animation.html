@@ -7,6 +7,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
+      /* Menu */
+
       body {
         margin: 0;
         font-family: Arial;
@@ -129,6 +131,8 @@
         }
       }
 
+      /* CSS Transition Timing Function */
+
       .line {
         width: 100%;
         background-color: blue;
@@ -154,11 +158,11 @@
       .ease-in {
         transition-timing-function: ease-in;
       }
-      
+
       .ease-out {
         transition-timing-function: ease-out;
       }
-      
+
       .ease-in-out {
         transition-timing-function: ease-in-out;
       }
@@ -167,6 +171,111 @@
         transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
       }
 
+      /* CSS Transition Duration */
+
+      .box-red {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: #f00;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-property: width;
+      }
+
+      .box-red:hover {
+        width: 200px;
+        background-color: #ff0;
+        transition-property: background-color;
+        transition-duration: 2s;
+        transition-property: width;
+      }
+
+      /* CSS Transition Delay */
+
+      .box-pink {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+
+        background-color: pink;
+        transition: background-color 1s;
+      }
+
+      .box-pink:hover {
+        background-color: #ff0;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s;
+      }
+
+      /* CSS Transition All */
+
+      .all {
+        display: flex;
+      }
+
+      .all .box-red,
+      .all .box-green,
+      .all .box-blue,
+      .all .box-yellow {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin: 2px;
+      }
+
+      .all .box-red {
+        background-color: red;
+        transition: background-color 1s;
+      }
+
+      .all .box-red:hover {
+        background-color: #ff0;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s;
+        cursor: pointer;
+      }
+
+      .all .box-green {
+        background-color: green;
+        transition: all 1s linear 2s;
+      }
+
+      .all .box-green:hover {
+        background-color: rgb(255, 0, 208);
+        transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
+        width: 300px;
+        height: 300px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .all .box-blue {
+        background-color: blue;
+        transition: all 1s linear 1s;
+      }
+
+      .all .box-blue:hover {
+        background-color: #ff0;
+        transition: width 2s ease-in-out 1s;
+        width: 200px;
+        cursor: pointer;
+      }
+
+      .all .box-yellow {
+        background-color: yellow;
+        transition: all 2s linear 1s;
+      }
+
+      .all .box-yellow:hover {
+        opacity: 0;
+        transition: opacity 2s ease-in-out 0s;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -225,18 +334,60 @@
       >
     </div>
 
-    <div id="especializar-1" style="padding-left: 16px">
+    <div style="padding-left: 16px">
+      <h1 id="especializar-1">CSS Transition e CSS Animation</h1>
+      <p>Resize the browser window to see how it works.</p>
+      <p>Hover over the dropdown button to open the dropdown menu.</p>
+    </div>
+
+    <div style="padding-left: 16px">
       <h2>CSS Transition Timing Function</h2>
       <p>Resize the browser window to see how it works.</p>
       <p>Hover over the dropdown button to open the dropdown menu.</p>
     </div>
 
-    <div class="line ease">EASE</div>
-    <div class="line linear">LINEAR</div>
-    <div class="line ease-in">EASE-IN</div>
-    <div class="line ease-out">EASE-OUT</div>
-    <div class="line ease-in-out">EASE-IN-OUT</div>
-    <div class="line cube">CUBE</div>
+    <div>
+      <div class="line ease">EASE</div>
+      <div class="line linear">LINEAR</div>
+      <div class="line ease-in">EASE-IN</div>
+      <div class="line ease-out">EASE-OUT</div>
+      <div class="line ease-in-out">EASE-IN-OUT</div>
+      <div class="line cube">CUBE</div>
+    </div>
+
+    <div style="padding-left: 16px">
+      <h2>CSS Transition Duration</h2>
+      <p>Resize the browser window to see how it works.</p>
+      <p>Hover over the dropdown button to open the dropdown menu.</p>
+    </div>
+
+    <div>
+      <div class="box-red"></div>
+    </div>
+
+    <div style="padding-left: 16px">
+      <h2>CSS Transition Delay</h2>
+      <p>Resize the browser window to see how it works.</p>
+      <p>Hover over the dropdown button to open the dropdown menu.</p>
+    </div>
+
+    <div>
+      <div class="box-pink"></div>
+    </div>
+    
+
+    <div style="padding-left: 16px">
+      <h2>CSS Transition All</h2>
+      <p>Resize the browser window to see how it works.</p>
+      <p>Hover over the dropdown button to open the dropdown menu.</p>
+    </div>
+
+    <div class="all">
+      <div class="box-red"></div>
+      <div class="box-green"></div>
+      <div class="box-blue"></div>
+      <div class="box-yellow"></div>
+    </div>
 
     <script>
       function myFunction() {
