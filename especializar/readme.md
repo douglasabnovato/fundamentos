@@ -9,9 +9,9 @@ Duas propriedades do css para fazer personalizações de transições e animaç�
 - [x] Transition property e duration
 - [x] Transition timing functions   
 - [x] Transition delay
-- [ ] Transition property all
-- [ ] Exemplo Transition
-- [ ] O que é css animation?
+- [x] Transition property all
+- [x] Exemplo Transition
+- [x] O que é css animation?
 - [ ] Animation name e duration
 - [ ] Keyframes com porcentagens
 - [ ] exemplo animation
