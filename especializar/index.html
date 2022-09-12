@@ -4,29 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Css Transition e Css Animation</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="/">Tiger Codes</a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Css Transition e Css Animation</h2>
-    </main>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active"><i class="fa fa-fw fa-user"></i>Home</a>
+      <a href="#news"><i class="fa fa-fw fa-user"></i>News</a>
+      <a href="#contact"><i class="fa fa-fw fa-user"></i>Contact</a>
+      <a href="#about"><i class="fa fa-fw fa-user"></i>About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div style="padding-left: 16px">
+      <h2>Responsive Topnav Example</h2>
+      <p>Resize the browser window to see how it works.</p>
+    </div>
     <script src="mobile-navbar.js"></script>
   </body>
 </html>
