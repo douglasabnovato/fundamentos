@@ -17,6 +17,6 @@ Duas propriedades do css para fazer personalizações de transições e animaç�
 - [x] Exemplo animation
 - [x] Animation delay
 - [x] Animation iteration count
-- [ ] Animation direction
+- [x] Animation direction
 - [ ] Animation timing function 
 - [ ] Animation fill mode
