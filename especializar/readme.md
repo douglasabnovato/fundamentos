@@ -1,6 +1,6 @@
 ## Rocketseat Discover - Trilha Especializar 
 
-### Transition e Animation
+### Css Transition e Css Animation
 
 Duas propriedades do css para fazer personalizações de transições e animações. Css transition e css animation são para mudar algum valor quantificável, como o hover. Criado um menu para demonstrar a aplicação.
 
@@ -18,5 +18,5 @@ Duas propriedades do css para fazer personalizações de transições e animaç�
 - [x] Animation delay
 - [x] Animation iteration count
 - [x] Animation direction
-- [ ] Animation timing function 
-- [ ] Animation fill mode
+- [x] Animation timing function 
+- [x] Animation fill mode
