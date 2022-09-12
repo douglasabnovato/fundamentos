@@ -12,11 +12,11 @@ Duas propriedades do css para fazer personalizações de transições e animaç�
 - [x] Transition property all
 - [x] Exemplo Transition
 - [x] O que é css animation?
-- [ ] Animation name e duration
-- [ ] Keyframes com porcentagens
-- [ ] exemplo animation
-- [ ] Animation delay
-- [ ] Animation iteration count
+- [x] Animation name e duration
+- [x] Keyframes com porcentagens
+- [x] Exemplo animation
+- [x] Animation delay
+- [x] Animation iteration count
 - [ ] Animation direction
 - [ ] Animation timing function 
 - [ ] Animation fill mode
