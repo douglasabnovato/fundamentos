@@ -8,7 +8,7 @@ Duas propriedades do css para fazer personalizações de transições e animaç�
 - [x] O que é css transition?
 - [x] Transition property e duration
 - [x] Transition timing functions   
-- [ ] Transition delay
+- [x] Transition delay
 - [ ] Transition property all
 - [ ] Exemplo Transition
 - [ ] O que é css animation?
