@@ -1,5 +1,9 @@
 ## Rocketseat Discover - Trilha Especializar 
 
+### Design
+
+Criar um layout para demonstrar na prática o conteúdo teórico e prático.
+
 ### Css Transition e Css Animation
 
 Duas propriedades do css para fazer personalizações de transições e animações. Css transition e css animation são para mudar algum valor quantificável, como o hover. Criado um menu para demonstrar a aplicação.
