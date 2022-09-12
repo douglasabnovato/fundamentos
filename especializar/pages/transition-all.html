@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,11 +15,12 @@
 
       .box-red,
       .box-green,
-      .box-blue {
+      .box-blue,
+      .box-yellow {
         width: 100px;
         height: 100px;
         border-radius: 100%;
-        margin: 2px;        
+        margin: 2px;
       }
 
       .box-red {
@@ -44,7 +44,7 @@
 
       .box-green:hover {
         background-color: rgb(255, 0, 208);
-        transition: all 1s cubic-bezier(.29, 1.01, 1, -0.68);
+        transition: all 1s cubic-bezier(0.29, 1.01, 1, -0.68);
         width: 300px;
         height: 300px;
         border-radius: 8px;
@@ -58,10 +58,19 @@
 
       .box-blue:hover {
         background-color: #ff0;
-        transition-property: background-color;
-        transition-duration: 1s;
-        transition-timing-function: ease-in;
-        transition-delay: 2s;
+        transition: width 2s ease-in-out 1s;
+        width: 200px;
+        cursor: pointer;
+      }
+
+      .box-yellow {
+        background-color: yellow;
+        transition: all 2s linear 1s;
+      }
+
+      .box-yellow:hover {
+        opacity: 0;
+        transition: opacity 2s ease-in-out 0s;
         cursor: pointer;
       }
     </style>
@@ -70,5 +79,6 @@
     <div class="box-red"></div>
     <div class="box-green"></div>
     <div class="box-blue"></div>
+    <div class="box-yellow"></div>
   </body>
 </html>
