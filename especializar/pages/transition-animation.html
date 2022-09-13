@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="shortcut icon" href="../public/favicon.ico">
+    <link rel="manifest" href="../public/manifest.json" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <title>Rocketseat</title>
     <style>
       /* Menu */
 
@@ -276,53 +285,216 @@
         transition: opacity 2s ease-in-out 0s;
         cursor: pointer;
       }
+
+      /* CSS Animation Duration */
+
+      .ball {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: #f00;
+        position: relative;
+
+        animation-name: example-two;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        animation-iteration-count: 3;
+        animation-direction: alternate-reverse;
+      }
+
+      @keyframes example-one {
+        from {
+          background-color: blueviolet;
+        }
+
+        to {
+          background-color: rosybrown;
+        }
+      }
+
+      @keyframes example-two {
+        0% {
+          background-color: blueviolet;
+          left: 0;
+          top: 0;
+        }
+
+        25% {
+          background-color: rosybrown;
+          left: 500px;
+          top: 0;
+        }
+
+        50% {
+          background-color: blue;
+          left: 500px;
+          top: 500px;
+        }
+
+        75% {
+          background-color: rgb(0, 255, 55);
+          left: 0;
+          top: 500px;
+        }
+
+        100% {
+          background-color: yellow;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      /* CSS Animation Timing Function */
+
+      .rectangle {
+        width: 100px;
+        height: 50px;
+        background-color: blueviolet;
+        position: relative;
+        animation-name: example-timing-function;
+        animation-duration: 2s;
+        margin: 2px;
+      }
+
+      .linear {
+        animation-timing-function: linear;
+      }
+
+      .ease {
+        animation-timing-function: ease;
+      }
+
+      .ease-in {
+        animation-timing-function: ease-in;
+      }
+
+      .ease-out {
+        animation-timing-function: ease-out;
+      }
+
+      .ease-in-out {
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes example-timing-function {
+        from {
+          left: 0px;
+        }
+
+        to {
+          left: calc(100% - 100px);
+        }
+      }
+      /* CSS Animation Fill Mode */
+
+      .fill-ball {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        position: relative;
+        border-radius: 100%;
+
+        animation-name: example-fill-ball;
+        animation-duration: 2s;
+        animation-delay: 2s;
+
+        /* forwards backwards both*/
+        animation-fill-mode: both;
+      }
+
+      @keyframes example-fill-ball {
+        from {
+          left: 0px;
+        }
+
+        to {
+          left: calc(100% - 100px);
+        }
+      }
     </style>
   </head>
   <body>
     <div class="topnav" id="myTopnav">
       <a href="../index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Trilha Conectar
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./guia-estelar-de-programacao.html">Guia Estelar de Programação</a>
+          <a href="./computador-software-e-hardware.html">Computador, Software e Hardware</a>
+          <a href="./internet-roteadores-e-servidores.html">Internet, Roteadores e Servidores</a>
+          <a href="./sistemas-operacionais.html">Sistemas Operacionais</a>
+          <a href="./linguagem-de-programacao.html">Linguagem de Programação</a>
+          <a href="./tipos-de-aplicacao-web.html">Tipos de Aplicação Web</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Trilha Fundamentar Parte 1
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./ambiente-dev.html">Ambiente Dev</a>
+          <a href="./guia-estelar-de-html.html">Guia Estelar de HTML</a>
+          <a href="./guia-estelar-de-css.html">Guia Estelar de CSS</a>
+          <a href="./nem-tudo-sao-pixels.html">Nem tudo são Pixels</a>
+          <a href="./uma-caixa-dentro-da-outra.html">Uma caixa dentro da outra</a>
+          <a href="./agora-sim-cores.html">Agora sim, cores</a>
+          <a href="./posso-ver-e-ouvir-o-html.html">Posso ver e ouvir o HTML</a>
+          <a href="./posicionando-foguetes.html">Posicionando foguetes</a>
+          <a href="./app-bonito-ate-nos-textos.html">App bonito, até nos textos</a>
+          <a href="./formularios-de-outro-planeta.html">Formulários de outro planeta</a>
+          <a href="./guia-estelar-javascript.html">Guia Estelar Javascript</a>
+          <a href="./html-que-faz-sentido-para-todos.html">HTML que faz sentido, para todos</a>
+          <a href="./nem-so-de-classes-ou-ids.html">Nem só de classes ou IDs</a>
+          <a href="./alinhando-os-planetas.html">Alinhamento os planetas</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Trilha Fundamentar Parte 2
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./pilotando-com-a-dom.html">Pilotando com a DOM</a>
+          <a href="./terminal.html">Terminal</a>
+          <a href="./nodejs.html">NodeJS</a>
+          <a href="./nodejs-ejs.html">NodeJS+EJS</a>
+          <a href="./sql.html">SQL</a>
+          <a href="./estrutura-de-dados.html">Estrutura de Dados</a>
+          <a href="./programacao-orientado-a-objetos.html">Programação Orientada a Objetos</a>
+          <a href="./programacao-funcional.html">Programação Funcional</a>
+          <a href="./guia-estelar-de-git.html">Guia Estelar de GIT</a>
+          <a href="./guia-estelar-de-github">Guia Estelar de Github</a>
+          <a href="./guia-estelar-de-http.html">Guia estelar de HTTP</a>
+        </div>
+      </div>
       <div class="active dropdown">
         <button class="dropbtn">
           Trilha Especializar
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a class="active" href="#especializar-1">Transition e Animation</a>
-          <a href="#especializar-2">Especializar 2</a>
-          <a href="#especializar-3">Especializar 3</a>
+          <a href="#especializar-1">Javascript Assíncrono e Promises</a>
+          <a href="#especializar-2">Trabalhando com APIs</a>
+          <a href="#especializar-3">Fundamentos do ReactJS</a>
+          <a href="#especializar-4">Fundamentos do Typescript</a>
+          <a href="#especializar-5">Github para</a>
+          <a class="active" href="#transition-animation"
+            >Transition e Animation</a
+          >
+          <a href="#especializar-7">SQL Avançado</a>
         </div>
       </div>
       <div class="dropdown">
         <button class="dropbtn">
-          Contact
+          Blog
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#contact-1">Contact 1</a>
-          <a href="#contact-2">Contact 2</a>
-          <a href="#contact-3">Contact 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#dropdown-1">Dropdown 1</a>
-          <a href="#dropdown-2">Dropdown 2</a>
-          <a href="#dropdown-3">Dropdown 3</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">
-          About
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#about-1">About 1</a>
-          <a href="#about-2">About 2</a>
-          <a href="#about-3">About 3</a>
+          <a href="./site-responsivo.html">Site Responsivo</a>
         </div>
       </div>
       <a
@@ -333,62 +505,86 @@
         >&#9776;</a
       >
     </div>
-
-    <div style="padding-left: 16px">
-      <h1 id="especializar-1">CSS Transition e CSS Animation</h1>
-      <p>Resize the browser window to see how it works.</p>
-      <p>Hover over the dropdown button to open the dropdown menu.</p>
+    <div class="home" id="transition-animation"  style="padding-left: 16px; padding-right: 16px">
+      <div style="padding-left: 16px">
+        <h1 id="especializar-1">Trilha Especializar</h1>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div style="padding-left: 16px">
+        <h2 id="especializar-1">CSS Transition e CSS Animation</h2>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div style="padding-left: 16px">
+        <h3>CSS Transition Timing Function</h3>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div style="padding-left: 16px; padding-right: 16px">
+        <div class="line ease">EASE</div>
+        <div class="line linear">LINEAR</div>
+        <div class="line ease-in">EASE-IN</div>
+        <div class="line ease-out">EASE-OUT</div>
+        <div class="line ease-in-out">EASE-IN-OUT</div>
+        <div class="line cube">CUBE</div>
+      </div>
+      <div style="padding-left: 16px">
+        <h3>CSS Transition Duration</h3>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div>
+        <div class="box-red"></div>
+      </div>
+      <div style="padding-left: 16px">
+        <h3>CSS Transition Delay</h3>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div>
+        <div class="box-pink"></div>
+      </div>
+      <div style="padding-left: 16px">
+        <h3>CSS Transition All</h3>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div class="all" style="padding-left: 16px; padding-right: 16px">
+        <div class="box-red"></div>
+        <div class="box-green"></div>
+        <div class="box-blue"></div>
+        <div class="box-yellow"></div>
+      </div>
+      <div style="padding-left: 16px">
+        <h3>CSS Animation Duration</h3>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div style="padding-left: 16px; padding-right: 16px">
+        <div class="ball"></div>
+      </div>
+      <div style="padding-left: 16px">
+        <h3>CSS Animation Timing Function</h3>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div style="padding-left: 16px; padding-right: 16px">
+        <div class="rectangle linear">Linear</div>
+        <div class="rectangle ease">Ease</div>
+        <div class="rectangle ease-in">Ease-in</div>
+        <div class="rectangle ease-out">Ease-out</div>
+        <div class="rectangle ease-in-out">Ease-in-out</div>
+      </div>
+      <div style="padding-left: 16px">
+        <h3>CSS Animation Fill Mode</h3>
+        <p>Resize the browser window to see how it works.</p>
+        <p>Hover over the dropdown button to open the dropdown menu.</p>
+      </div>
+      <div style="padding-left: 16px; padding-right: 16px">
+        <div class="fill-ball"></div>
+      </div>
     </div>
-
-    <div style="padding-left: 16px">
-      <h2>CSS Transition Timing Function</h2>
-      <p>Resize the browser window to see how it works.</p>
-      <p>Hover over the dropdown button to open the dropdown menu.</p>
-    </div>
-
-    <div>
-      <div class="line ease">EASE</div>
-      <div class="line linear">LINEAR</div>
-      <div class="line ease-in">EASE-IN</div>
-      <div class="line ease-out">EASE-OUT</div>
-      <div class="line ease-in-out">EASE-IN-OUT</div>
-      <div class="line cube">CUBE</div>
-    </div>
-
-    <div style="padding-left: 16px">
-      <h2>CSS Transition Duration</h2>
-      <p>Resize the browser window to see how it works.</p>
-      <p>Hover over the dropdown button to open the dropdown menu.</p>
-    </div>
-
-    <div>
-      <div class="box-red"></div>
-    </div>
-
-    <div style="padding-left: 16px">
-      <h2>CSS Transition Delay</h2>
-      <p>Resize the browser window to see how it works.</p>
-      <p>Hover over the dropdown button to open the dropdown menu.</p>
-    </div>
-
-    <div>
-      <div class="box-pink"></div>
-    </div>
-    
-
-    <div style="padding-left: 16px">
-      <h2>CSS Transition All</h2>
-      <p>Resize the browser window to see how it works.</p>
-      <p>Hover over the dropdown button to open the dropdown menu.</p>
-    </div>
-
-    <div class="all">
-      <div class="box-red"></div>
-      <div class="box-green"></div>
-      <div class="box-blue"></div>
-      <div class="box-yellow"></div>
-    </div>
-
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
