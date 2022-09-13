@@ -9,7 +9,13 @@ Criar um layout para demonstrar na prática o conteúdo teórico e prático.
 
 ### Páginas
 
-
+- [ ] Javascript Assíncrono e Promises
+- [ ] Trabalhando com APIs
+- [ ] Fundamentos do ReactJS
+- [ ] Fundamentos do Typescript
+- [ ] Github para times
+- [x] Transition e Animation
+- [ ] SQL Avançado
 
 ### Css Transition e Css Animation
 

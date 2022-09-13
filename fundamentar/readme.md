@@ -1,1 +1,1 @@
-Discover > Trilha Fundamentar > subtítulo
+Discover > Trilha Fundamentar > subtítulos

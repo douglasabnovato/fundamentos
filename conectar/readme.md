@@ -1,1 +1,1 @@
-Discover > Trilha Conectar > subtítulo
+Discover > Trilha Conectar > subtítulos
