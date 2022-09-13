@@ -7,6 +7,10 @@ Criar um layout para demonstrar na prática o conteúdo teórico e prático.
 - navegação com o menu
 - responsividade
 
+### Páginas
+
+
+
 ### Css Transition e Css Animation
 
 Duas propriedades do css para fazer personalizações de transições e animações, css transition e css animation são para mudar algum valor quantificável, como o hover. 
