@@ -276,6 +276,132 @@
         transition: opacity 2s ease-in-out 0s;
         cursor: pointer;
       }
+
+      /* CSS Animation Duration */
+
+      .ball {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: #f00;
+        position: relative;
+
+        animation-name: example-two;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        animation-iteration-count: 3;
+        animation-direction: alternate-reverse;
+      }
+
+      @keyframes example-one {
+        from {
+          background-color: blueviolet;
+        }
+
+        to {
+          background-color: rosybrown;
+        }
+      }
+
+      @keyframes example-two {
+        0% {
+          background-color: blueviolet;
+          left: 0;
+          top: 0;
+        }
+
+        25% {
+          background-color: rosybrown;
+          left: 500px;
+          top: 0;
+        }
+
+        50% {
+          background-color: blue;
+          left: 500px;
+          top: 500px;
+        }
+
+        75% {
+          background-color: rgb(0, 255, 55);
+          left: 0;
+          top: 500px;
+        }
+
+        100% {
+          background-color: yellow;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      /* CSS Animation Timing Function */
+
+      .rectangle {
+        width: 100px;
+        height: 50px;
+        background-color: blueviolet;
+        position: relative;
+        animation-name: example-timing-function;
+        animation-duration: 2s;
+        margin: 2px;
+      }
+
+      .linear {
+        animation-timing-function: linear;
+      }
+
+      .ease {
+        animation-timing-function: ease;
+      }
+
+      .ease-in {
+        animation-timing-function: ease-in;
+      }
+
+      .ease-out {
+        animation-timing-function: ease-out;
+      }
+
+      .ease-in-out {
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes example-timing-function {
+        from {
+          left: 0px;
+        }
+
+        to {
+          left: calc(100% - 100px);
+        }
+      }
+      /* CSS Animation Fill Mode */
+
+      .fill-ball {
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        position: relative;
+        border-radius: 100%;
+
+        animation-name: example-fill-ball;
+        animation-duration: 2s;
+        animation-delay: 2s;
+
+        /* forwards backwards both*/
+        animation-fill-mode: both;
+      }
+
+      @keyframes example-fill-ball {
+        from {
+          left: 0px;
+        }
+
+        to {
+          left: calc(100% - 100px);
+        }
+      }
     </style>
   </head>
   <body>
@@ -374,7 +500,6 @@
     <div>
       <div class="box-pink"></div>
     </div>
-    
 
     <div style="padding-left: 16px">
       <h2>CSS Transition All</h2>
@@ -387,6 +512,40 @@
       <div class="box-green"></div>
       <div class="box-blue"></div>
       <div class="box-yellow"></div>
+    </div>
+
+    <div style="padding-left: 16px">
+      <h2>CSS Animation Duration</h2>
+      <p>Resize the browser window to see how it works.</p>
+      <p>Hover over the dropdown button to open the dropdown menu.</p>
+    </div>
+
+    <div>
+      <div class="ball"></div>
+    </div>
+
+    <div style="padding-left: 16px">
+      <h2>CSS Animation Timing Function</h2>
+      <p>Resize the browser window to see how it works.</p>
+      <p>Hover over the dropdown button to open the dropdown menu.</p>
+    </div>
+
+    <div>
+      <div class="rectangle linear">Linear</div>
+      <div class="rectangle ease">Ease</div>
+      <div class="rectangle ease-in">Ease-in</div>
+      <div class="rectangle ease-out">Ease-out</div>
+      <div class="rectangle ease-in-out">Ease-in-out</div>
+    </div>
+
+    <div style="padding-left: 16px">
+      <h2>CSS Animation Fill Mode</h2>
+      <p>Resize the browser window to see how it works.</p>
+      <p>Hover over the dropdown button to open the dropdown menu.</p>
+    </div>
+
+    <div>
+      <div class="fill-ball"></div>
     </div>
 
     <script>
